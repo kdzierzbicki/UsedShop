@@ -1,0 +1,53 @@
+
+.foot
+{
+    float: left;
+    width: 100%;
+    padding: 0px;
+    padding-bottom:0px;
+    background-color: #004b77;
+    color: white;
+    margin: 20px auto 0px auto;
+    font-size: 20px;
+    text-align: center;
+    clear: both;
+    position: relative; bottom: 0;
+}
+.kom{
+
+
+    float: left;
+    width: 780px;
+    background-color: #fff;
+    text-decoration-color: #c51f1a;
+    margin: 20px auto 0px auto;
+    font-size: 10px;
+    text-align: center;
+    clear: both;
+    position: absolute; bottom: 0;
+
+
+}
+
+.video {
+
+    position:absolute;
+    left: -38%;
+    min-width: 100%;
+    min-height: 80%;
+    z-index: 0;
+    width: auto;
+    
+
+}
+
+.caption{
+float: left;
+
+
+
+}
+
+img {
+  float: left;
+}
