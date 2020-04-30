@@ -15,19 +15,23 @@
             <ul class="list-group">
                 @foreach($products as $product)
 
+
                    <li class="list-group-item">
 
                     <span class="badge">{{ $product['qty'] }}</span>
                        <strong> {{ $product['item']['title'] }} </strong>
                        <span class="label label-success">{{ $product['price'] }}</span>
-                       <div class="btn-group">
-                      <button type="button" class="btn btn-primary btn-xs dropdown-toogle" data-toogle="dropdown"> Usuń <span class="caret"></span></button>
-                           <ul class="dropdown-menu">
-                               <li><a href="{{ route('product.reducebyOne', ['id'=> $product['item']['id'] ]) }}">Usuń 1</a></li>
-                               <li><a href="{{ route('product.remove', ['id'=> $product['item']['id'] ]) }}">Usuń wszystko</a></li>
-                           </ul>
 
-                       </div>
+
+
+                           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuń</button>
+                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                               <a class="dropdown-item" href="{{ route('product.reducebyOne', ['id'=> $product['item']['id'] ]) }}">Usuń 1</a>
+                               <a class="dropdown-item" href="{{ route('product.reducebyOne', ['id'=> $product['item']['id'] ]) }}">Usuń wszystko</a>
+
+                           </div>
+
+
                    </li>
 
                     @endforeach

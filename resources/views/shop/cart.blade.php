@@ -6,6 +6,9 @@
 
 @section('content')
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/shop/resources/css/style.css" />
 
 @if(Session::has('success') )
     <div class="row">
@@ -22,10 +25,10 @@
 
         
         
-        <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3oYj5?ver=0b43&q=90&m=6&h=200&w=200&b=%23FFFFFFFF&o=f&aim=true" alt="..." class="img-responsive" >
-                    <div class id="caption">
+        <div class="col-sm-12 col-md-12 shopping-cart">
+                <div class="thumbnail cart-product">
+                    <img class="product-image" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3oYj5?ver=0b43&q=90&m=6&h=200&w=200&b=%23FFFFFFFF&o=f&aim=true" alt="..." class="img-responsive" >
+                    <div class="caption">
                         <h3>MacBook</h3>
                         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores error
                             eum inventore officia quis quos totam!</p>
@@ -36,11 +39,11 @@
                         </div>
                     </div>
                 </div>
-            
-                
-                <div class="thumbnail">
-                    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3oYj5?ver=0b43&q=90&m=6&h=200&w=200&b=%23FFFFFFFF&o=f&aim=true" alt="..." class="img-responsive" >
-                    <div class id="caption">
+
+
+            <div class="thumbnail cart-product">
+                <img class="product-image" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3oYj5?ver=0b43&q=90&m=6&h=200&w=200&b=%23FFFFFFFF&o=f&aim=true" alt="..." class="img-responsive" >
+                    <div class="caption">
                         <h3>HP</h3>
                         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores error
                             eum inventore officia quis quos totam!</p>
@@ -52,9 +55,9 @@
                     </div>
                 </div>
 
-                <div class="thumbnail">
-                    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3oYj5?ver=0b43&q=90&m=6&h=200&w=200&b=%23FFFFFFFF&o=f&aim=true" alt="..." class="img-responsive" >
-                    <div class id="caption">
+            <div class="thumbnail cart-product">
+                    <img class="product-image" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3oYj5?ver=0b43&q=90&m=6&h=200&w=200&b=%23FFFFFFFF&o=f&aim=true" alt="..." class="img-responsive" >
+                    <div class="caption">
                         <h3>DELL</h3>
                         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores error
                             eum inventore officia quis quos totam!</p>
