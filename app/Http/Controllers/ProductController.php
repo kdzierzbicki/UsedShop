@@ -154,15 +154,15 @@ $order->save();
 $user =  Auth::user();
 
 
-// $user->orders()->save($order);
+$user->orders()->save($order);
 
   } catch (\Exception $e) {
 
     return redirect()->route('checkout')->with('error' , $e->getMessage());
   }
   Session::forget('cart');
-  return redirect()->route('cart.blade');
-  return redirect()->route('user.signup')->with('success', 'Succesfully purchased products!');
+  return redirect()->route('shop.cart');
+  return redirect()->route('user.signup')->with('Sukces!', 'Udało ci się kupić produkty!');
 
 }
 

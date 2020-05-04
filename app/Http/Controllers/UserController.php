@@ -11,7 +11,7 @@ class UserController extends Controller
 {
     public function getSignup(){
 
-        return view('user.signup');
+        return view('register');
     }
 
     public function postSignup(Request $request){
@@ -40,12 +40,12 @@ class UserController extends Controller
            return redirect()->to($oldUrl);
       }
 
-      return redirect()->route('user.profile');
+      return redirect()->route('login');
     }
 
     public function getSignin(){
 
-return view('user.signin');
+return view('login');
 
 
     }
@@ -88,6 +88,6 @@ return view('user.signin');
     public function getLogout() {
 
         Auth::logout();
-        return redirect()->route('user.signin');
+        return redirect()->route('login');
     }
 }
