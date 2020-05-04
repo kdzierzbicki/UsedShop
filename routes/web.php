@@ -32,20 +32,15 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/forgot_password', 'Security/ForgotPassword@forgot');
 Route::post('/forgot_password', 'Security/ForgotPassword@password');
 
-//Route::get('/cart', function () {
-//    return view('shop.cart');
-//});
+Route::get('/cart', function () {
+return view('shop.cart');
+});
 
 Route::get('/index', function () {
     return view('comment.index');
 });
 
 
-
-
-//Route::get('/contact', function () {
-    //return view('contact.contact');
-//});
 
 
 Route::get('/reduce/{id}', [
@@ -62,26 +57,26 @@ Route::get('/remove/{id}', [
 
     ]);
 
-    Route::get('/signup', [
+    Route::get('/register', [
         'uses'=>'UserController@getSignup',
-        'as' => 'user.signup'
+        'as' => 'register'
 
     ]);
 
-    Route::post('/signup', [
+    Route::post('/register', [
         'uses' => 'UserController@postSignup',
-        'as'=> 'user.signup'
+        'as'=> 'register'
 
     ]);
 
-    Route::get('/signin', [
+    Route::get('/login', [
         'uses'=>'UserController@getSignin',
-        'as' => 'user.signin'
+        'as' => 'login'
     ]);
 
-    Route::post('/signin', [
+    Route::post('/login', [
         'uses' => 'UserController@postSignin',
-        'as'=> 'user.signin'
+        'as'=> 'login'
 
     ]);
 
