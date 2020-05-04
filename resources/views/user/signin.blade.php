@@ -10,12 +10,12 @@
             @if(count($errors) > 0)
                 <div class="alert alert-danger">
                     @foreach($errors->all() as $error)
-                        <p>{{$error }}</p>
+                        <p>{{$error}}</p>
                     @endforeach
 
                 </div>
             @endif
-            <form action="{{ route('user.signin') }}" method="post">
+            <form action="{{ route('user.profile') }}" method="post">
                 <div class="form-group">
                     <label for="email">E-Mail</label>
                     <input type="text" id="email" name="email" class="form-control" >
@@ -33,7 +33,7 @@
                 {{ csrf_field() }}
 
             </form>
-            <p> Nie masz jeszcze konta? <a href="{{ route('user.signup') }}">Załóż tutaj</a></p>
+            <p> Nie masz jeszcze konta? <a href="{{ route('register') }}">Załóż tutaj</a></p>
         </div>
 
     </div>

@@ -20,7 +20,7 @@
       <div class="row">
        <div class="col-xs-12">
          <div class="form-group">
-           <label for="name">Imię</label>
+           <label for="name">Imię i Nazwisko</label>
            <input type="text" id="name" id="name" class="form-control" required>
          </div>
        </div>
@@ -34,7 +34,7 @@
          <hr>
          <div class="col-xs-12">
            <div class="form-group">
-             <label for="name">Nazwa twoja karty</label>
+             <label for="name">Nazwa twojej karty</label>
              <input type="text" id="card-name" class="form-control" required>
            </div>
          </div>

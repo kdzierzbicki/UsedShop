@@ -32,7 +32,7 @@
             }
 
             .title {
-                font-size: 72px;
+                font-size: 42px;
                 margin-bottom: 40px;
             }
         </style>

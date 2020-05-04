@@ -14,16 +14,17 @@
 
 
         <style>
+
             html, body {
 
-                background-color: #d8e4ee;
-                color: #3e5b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
+    background-color: #d8e4ee;
+    color: #3e5b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
 
-            }
+}
 
             .full-height {
                 height: 100vh;
@@ -51,15 +52,15 @@
             }
 
             .title {
-                font-size: 80px;
+                font-size: 40px;
 
             }
 
             .links > a {
                 color: #05606f;
                 padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
+                font-size: 12px;
+                font-weight: 800;
                 letter-spacing: .1rem;
                 text-decoration: #0068ff;
                 text-transform: uppercase;
@@ -79,7 +80,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ route('user.profile') }}">Panel logowania</a>
+                        <a href="{{ route('user.profile') }}">Profil</a>
                     @else
                         <a href="{{ route('login') }}">Logowanie</a>
 
@@ -99,17 +100,19 @@
                     <a href="{{ url('/') }}">Strona Główna</a>
                     <a href="{{ url('/cart') }}">Zamów</a>
                     <!-- <a href="{{ url('/index') }}">Zadaj pytanie</a>  -->
-                    <a href={{ url('/contact') }}>Kontakt</a>
+                    <a href="{{ url('/contact') }}">Kontakt</a>
+
+
 
 
                 </div>
-               
+
             </div>
-            
+
         </div>
-        <div class="foot">@Kamil Dzierzbicki Ver.1.0</div>
-        
-        
+
+
+        <ul class="foot">@Kamil Dzierzbicki ver.1.0</ul>
     </body>
     
 </html>

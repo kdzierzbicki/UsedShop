@@ -15,7 +15,7 @@
 
             </div>
         @endif
-        <form action="{{ route('user.signup') }}" method="post">
+        <form action="{{ route('register') }}" method="post">
             <div class="form-group">
                 <label for="email">E-Mail</label>
                 <input type="text" id="email" name="email" class="form-control" >
